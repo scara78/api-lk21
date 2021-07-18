@@ -13,7 +13,7 @@ app.get('/', function (req, res) {
 
 app.get('/newupload', function (req, res) {
     const numPage = req.query.hasOwnProperty('page') ? req.query.page : 1
-    let url = `https://lk21online.online/page/${numPage}/`
+    let url = `https://45.134.21.109/page/${numPage}/`
     getJSON(res, url, numPage)
 })
 
