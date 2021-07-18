@@ -19,34 +19,34 @@ app.get('/newupload', function (req, res) {
 
 app.get('/comingsoon', function (req, res) {
     const numPage = req.query.hasOwnProperty('page') ? req.query.page : 1
-    let url = `https://lk21online.online/coming-soon/page/${numPage}`
+    let url = `https://45.134.21.109/coming-soon/page/${numPage}`
     getJSON(res, url, numPage)
 })
 
 app.get('/tv', function (req, res) {
     const numPage = req.query.hasOwnProperty('page') ? req.query.page : 1
-    let url = `https://lk21online.online/tv-series/page/${numPage}`
+    let url = `https://45.134.21.109//tv-series/page/${numPage}`
     getJSON(res, url, numPage)
 })
 
 app.get('/year', function (req, res) {
     const numPage = req.query.hasOwnProperty('page') ? req.query.page : 1
     const year = req.query.year
-    let url = `https://lk21online.online/year/${year}/page/${numPage}`
+    let url = `https://45.134.21.109/year/${year}/page/${numPage}`
     getJSON(res, url, numPage)
 })
 
 app.get('/country', function (req, res) {
     const numPage = req.query.hasOwnProperty('page') ? req.query.page : 1
     const country = req.query.country
-    let url = `https://lk21online.online/country/${country}/page/${numPage}`
+    let url = `https://45.134.21.109/country/${country}/page/${numPage}`
     getJSON(res, url, numPage)
 })
 
 app.get('/genre', function (req, res) {
     const numPage = req.query.hasOwnProperty('page') ? req.query.page : 1
     const genre = req.query.genre
-    let url = `https://lk21online.online/${genre}/page/${numPage}`
+    let url = `https://45.134.21.109/${genre}/page/${numPage}`
     getJSON(res, url, numPage)
 })
 
@@ -54,7 +54,7 @@ app.get('/search', function (req, res) {
     const numPage = req.query.hasOwnProperty('page') ? req.query.page : 1
     const query = req.query.query
 
-    let url = `https://lk21online.online/page/${numPage}/?s=${query}`
+    let url = `https://45.134.21.109/page/${numPage}/?s=${query}`
     getJSON(res, url, numPage)
 })
 
